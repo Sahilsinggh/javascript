@@ -35,9 +35,30 @@
 <script>
     var imgs=document.getElementById('imgs').getElementsByTagName('li'),
         nums=document.getElementById('num').getElementsByTagName('li');
+    //自动播
+    var k=0;//初始值
+    function auto(){
+        for(var i=0;i<nums.length;i++){
+            imgs[i].style.display='none';
+            nums[i].style.background='none';
+        }
+        imgs[k].style.display='block';
+        nums[k].style.background='red';
+        k++;
+        if(k>nums.length-1){
+            k=0;
+        }
+
+    }
+    sl=setInterval(auto,1000);
+
+
+
+    //划过出现对应的图片
     for(var i=0;i<nums.length;i++){
         nums[i].index=i;
         nums[i].onmouseover=function(){
+            clearInterval(sl);
             //鼠标划过数字的时候
             //让所有的图片隐藏 让数字的背景清空
             for(var j=0;j<imgs.length;j++){
@@ -47,7 +68,12 @@
             nums[this.index].style.background='red';
             imgs[this.index].style.display='block';
         }
+        nums[i].onmouseout=function(){
+            k=this.index;
+            sl=setInterval(auto,1000);
+        }
     }
+
 </script>
 </body>
 </html>
