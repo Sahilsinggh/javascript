@@ -1,0 +1,136 @@
+#box{
+	width:976px;
+	height:568px;
+	background: #d7caca;
+}
+#top{
+	width:976px;
+	height:88px;
+	background: #e6c1e1;
+}
+#top img{
+	float:left;
+}
+.people{
+	float: right;
+}
+.people input{
+	width:74px;
+	height:18px;
+}
+#nav{
+	height:38px;
+	line-height: 38px;
+	background: #b98dcc;
+}
+#nav li{
+	float: left;
+	padding:0 10px 0 16px;
+	font-weight: bold;
+}
+#nav li:hover{
+	background: #fff;
+}
+#main{
+	height:330px;
+	background: #91cfde;
+}
+.m_left{
+	width: 296px;
+	float:left;
+	height:330px;
+	background: #98f1bc;
+}
+.m_left h3{
+	height :46px;
+	border-bottom: 1px solid #ccc;
+	color:#bd0703;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.m_left h3 span{
+	float:right;
+	font-size: 14px;
+	color: #000;
+}
+.meiri{
+	height:144px;
+}
+.meiri dl{
+	float: left;
+	margin-left:6px;
+}
+.m_center{
+	width: 306px;
+	float:left;
+	margin-left:20px;
+	height:330px;
+	
+}
+.m_center h3{
+	height :46px;
+	border-bottom: 1px solid #ccc;
+	color:#bd0703;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.m_center h3 span{
+	float:right;
+	font-size: 14px;
+	color: #000;
+}
+.m_center ul li{
+	line-height: 24px;
+	padding-left: 14px;
+	background: url('../images/10每经网1_14.png') no-repeat;
+	background-position: 4px 10px;
+}
+.m_right{
+	width: 300px;
+	float:left;
+	height:330px;
+	margin-left:35px;
+	background: #f2af7e;
+}
+.m_right h3{
+	height :46px;
+	border-bottom: 1px solid #ccc;
+	color:#bd0703;
+	line-height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.m_right h3 span{
+	float:right;
+	font-size: 14px;
+	color: #000;
+}
+.m_right h1{
+	height:30px;
+	line-height: 30px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+.m_right dl{
+	height:100px;
+}
+.m_right dl dt{
+	width: 80px;
+	float: left;
+	height:61px;
+}
+.m_right dl dt img{
+	width: 80px;
+	height:61px;
+}
+.m_right dl dd{
+	width: 210px;
+	height:60px;
+	float: right;
+}
+#foot{
+	height:108px;
+	background:#e0dd83; 
+}

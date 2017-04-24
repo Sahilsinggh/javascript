@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="box">
+    <ul id="imgs">
+        <li>
+            <img src="images/1.jpg" alt="">
+            <p>，地方看桃花运飞鹰计划个瑜伽</p>
+        </li>
+        <li>
+            <img src="images/2.jpg" alt="">
+            <p>，地方看桃花运飞鹰计划个瑜伽</p>
+        </li>
+        <li>
+            <img src="images/3.jpg" alt="">
+            <p>，地方看桃花运飞鹰计划个瑜伽</p>
+        </li>
+        <li><img src="images/4.jpg" alt=""><p>，地方看桃花运飞鹰计划个瑜伽</p></li>
+        <li><img src="images/5.jpg" alt=""><p>，地方看桃花运飞鹰计划个瑜伽</p></li>
+        <li><img src="images/6.jpg" alt=""><p>，地方看桃花运飞鹰计划个瑜伽</p></li>
+        <li><img src="images/7.jpg" alt=""><p>，地方看桃花运飞鹰计划个瑜伽</p></li>
+        <li><img src="images/8.jpg" alt=""><p>，地方看桃花运飞鹰计划个瑜伽</p>
+        </li>
+        <li><img src="images/9.jpg" alt=""><p>，地方看桃花运飞鹰计划个瑜伽</p></li>
+        <li><img src="images/10.jpg" alt=""><p>，地方看桃花运飞鹰计划个瑜伽</p></li>
+    </ul>
+</div>
+<script>
+    var lis=document.getElementsByTagName('ul')[0].getElementsByTagName('li');
+    //划过每个li的时候
+    //1、让li加边框 离开时 边框消失
+    for(var i=0;i<lis.length;i++){
+        //每个li添加划过事件
+        lis[i].onmouseover=function(){
+            this.style.border='2px solid red';
+            this.getElementsByTagName('p')[0].style.display='block';
+            this.getElementsByTagName('p')[0].style.color='red';
+        }
+        lis[i].onmouseout=function(){
+            this.style.border='2px solid #ccc';
+            this.getElementsByTagName('p')[0].style.display='none';
+            this.getElementsByTagName('p')[0].style.color='#fff';
+        }
+    }
+    //2、让li里的p显示  离开时隐藏
+</script>
+</body>
+</html>
