@@ -1,0 +1,32 @@
+*{margin: 0;padding: 0;list-style: none;}
+#box{
+    width: 6830px;
+    height: 768px;
+    position: absolute;
+    -webkit-animation:mycss 10s linear 3s infinite;
+    /* 速度曲线:匀速         linear
+             由慢到快再到慢 ease;
+             由慢开始     ease-in
+             由慢结束    ease-out
+             由慢开始由慢结束 ease-in-out
+
+    播放次数:n infinite;
+    动画的方向:normal alternate倒序; */
+}
+@-webkit-keyframes mycss{
+    0%{
+        left:0;
+    }
+    30%{
+        left:-1366px;
+    }
+    60%{
+        left:-2732px;
+    }
+    75%{
+        left:-4098px;
+    }
+    100%{
+        left:-5464px;
+    }
+}
