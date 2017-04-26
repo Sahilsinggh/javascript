@@ -20,3 +20,26 @@
 #radioBox input:checked+label{
     background-position:-51px 0;
 }
+
+#checkBox1{
+    width:50px;
+    height: 30px;
+    position: relative;
+    margin: 0 auto;
+}
+#checkBox1 input{
+    position: absolute;
+    opacity: 0;
+}
+#checkBox1 label{
+    width: 50px;
+    height:30px;
+    display: block;
+    background: url(../img/no_choose.png);
+    background-size:100%;
+    -webkit-transition:all 1s;
+}
+#checkBox1 input:checked+label{
+    background: url(../img/true_btn.png);
+    background-size: 100%;
+}
