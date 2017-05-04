@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 300px;
+            height: 200px;
+            background: yellow;
+            margin: 20px auto;
+            display: -webkit-box;
+            -webkit-box-orient:vertical;
+        }
+        #box .left{
+            -webkit-box-flex:1;
+            background: red;
+        }
+        #box .center{
+            -webkit-box-flex:1;
+            background: green;
+        }
+        #box .right{
+            -webkit-box-flex:1;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="left"></div>
+    <div class="center"></div>
+    <div class="right"></div>
+</div>
+</body>
+</html>
